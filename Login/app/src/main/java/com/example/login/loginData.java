@@ -4,6 +4,8 @@ import android.widget.EditText;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+
 public class loginData {
     String account_id;
     String password;

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="418dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/add"
+                android:text="추가"
+                android:backgroundTint="#8BC34A"/>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="제목(20자 이하)" />
+
+            <EditText
+                android:id="@+id/content"
+                android:gravity="top"
+                android:hint="할일(100자 이하)"
+                android:layout_width="match_parent"
+                android:layout_height="349dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

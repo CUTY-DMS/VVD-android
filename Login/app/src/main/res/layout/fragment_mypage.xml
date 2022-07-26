@@ -1,28 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mypage">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mypage"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        android:layout_width="409dp"
-        android:layout_height="590dp"
-        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_marginTop="0dp"
         android:scrollbarFadeDuration="0"
         android:scrollbarSize="7dp"
         android:scrollbarThumbVertical="@android:color/background_dark"
         android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_add"
+    <TextView
+        android:id="@+id/name"
+        android:text=""
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:backgroundTint="#38913C"
-        android:text="추가"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="28dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="" />
+
+
+</LinearLayout>

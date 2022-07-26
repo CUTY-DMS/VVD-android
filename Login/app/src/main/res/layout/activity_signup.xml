@@ -8,9 +8,10 @@
 
     <Button
         android:id="@+id/join"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="180dp"
+        android:backgroundTint="#8BC34A"
         android:text="가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,9 +21,10 @@
 
     <EditText
         android:id="@+id/mPassword"
-        android:layout_width="108dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginBottom="40dp"
+        android:hint="너와 나의 연결고리"
         app:layout_constraintBottom_toTopOf="@+id/mName"
         app:layout_constraintEnd_toEndOf="@+id/mName"
         app:layout_constraintHorizontal_bias="0.0"
@@ -31,20 +33,21 @@
 
     <EditText
         android:id="@+id/mId"
-        android:layout_width="108dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="56dp"
+        android:hint="기모띠"
         app:layout_constraintBottom_toTopOf="@+id/mPassword"
         app:layout_constraintEnd_toEndOf="@+id/mPassword"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/mPassword"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/mName"
-        android:layout_width="108dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginBottom="40dp"
+        android:hint="후 얼 유"
         app:layout_constraintBottom_toTopOf="@+id/mAge"
         app:layout_constraintEnd_toEndOf="@+id/mAge"
         app:layout_constraintHorizontal_bias="1.0"
@@ -53,9 +56,10 @@
 
     <EditText
         android:id="@+id/mAge"
-        android:layout_width="108dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginBottom="40dp"
+        android:hint="연세"
         app:layout_constraintBottom_toTopOf="@+id/join"
         app:layout_constraintEnd_toEndOf="@+id/join"
         app:layout_constraintStart_toStartOf="@+id/join"

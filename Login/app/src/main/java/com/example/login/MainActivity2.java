@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -19,8 +18,8 @@ public class MainActivity2 extends AppCompatActivity {
     private ActivityMainBinding binding;
     private FragmentManager fragmentManager;
     private mypage mypage;
-    private search search;
-    private home home;
+    private reminder search;
+    private add home;
 
 
     @Override
@@ -29,8 +28,8 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         fragmentManager = getSupportFragmentManager();
         Fragment mypage = new mypage();
-        Fragment search = new search();
-        Fragment home = new home();
+        Fragment search = new reminder();
+        Fragment home = new add();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

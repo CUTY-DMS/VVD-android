@@ -4,6 +4,8 @@ import android.widget.EditText;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+
 public class signupData {
 
     private String account_id;
@@ -17,6 +19,7 @@ public class signupData {
         this.name = name;
         this.age = age;
     }
+
 
     public String getAccount_id() {
         return account_id;

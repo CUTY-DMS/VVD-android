@@ -55,21 +55,16 @@ public class signup<postApi> extends AppCompatActivity {
             Toast.makeText(this, "asdas", Toast.LENGTH_SHORT).show();
         }
     }
-
     private void startJoin(signupData data) {
         postApi.usersignup(data).enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 Log.e("TAG","onResponse");
-                if (response.isSuccessful()) {
-                    if (response.code() == 200){
-                        Void result = response.body();
-                        Toast.makeText(signup.this, "성공", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-                        startActivity(intent);
-                    }
-                } else if (response.code() == 404) {
+                if (response.code() == 404) {
                     Toast.makeText(getApplicationContext(), "user not found!", Toast.LENGTH_SHORT).show();
+                }else if (response.isSuccessful()){
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(intent);
                 }
             }
             @Override
